@@ -23,7 +23,7 @@ const Home = () => {
             description: "MERN Developer",
             image: "https://avatars.githubusercontent.com/u/107781622?v=4",
             order_id: order.id,
-            callback_url: "https://server-virid-one.vercel.app/api/paymentverification",
+            callback_url: "http://www.localhost:4000/api/paymentverification",
             prefill: {
                 name: "Gaurav Kumar",
                 email: "gaurav.kumar@example.com",
