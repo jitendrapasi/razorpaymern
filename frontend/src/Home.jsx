@@ -9,9 +9,9 @@ const Home = () => {
 
     const checkoutHandler = async (amount) => {
 
-        const { data: { key } } = await axios.get("http://www.localhost:4000/api/getkey")
+        const { data: { key } } = await axios.get("https://server-virid-one.vercel.app/api/getkey")
 
-        const { data: { order } } = await axios.post("http://localhost:4000/api/checkout", {
+        const { data: { order } } = await axios.post("https://server-virid-one.vercel.app/api/checkout", {
             amount
         })
 
@@ -23,7 +23,7 @@ const Home = () => {
             description: "MERN Developer",
             image: "https://avatars.githubusercontent.com/u/107781622?v=4",
             order_id: order.id,
-            callback_url: "http://localhost:4000/api/paymentverification",
+            callback_url: "https://server-virid-one.vercel.app/api/paymentverification",
             prefill: {
                 name: "Gaurav Kumar",
                 email: "gaurav.kumar@example.com",
